@@ -40,7 +40,7 @@ edges = cv.Canny(gray, 50, 150, apertureSize=3)
 #     y2 = int(y0 - 1000 * (a))
 #     cv.line(img, (x1, y1), (x2, y2), (255, 255, 255), 2)
 
-cv.imshow("image", img)
+# cv.imshow("image", img)
 
 
 # Method 2: Probabilistic Hough Transform
@@ -49,5 +49,6 @@ for line in lines:
     x1, y1, x2, y2 = line[0]
     cv.line(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
 
+cv.imshow('image', img)
 cv.waitKey(0)
 cv.destroyAllWindows()
